@@ -262,7 +262,6 @@ int main(int argc, char *argv[])
     /* init all of the client structures */
     for (i = 0; i < MAXCLIENTS; i++)
         memset(&clients[i], 0, sizeof(struct client_t));
-        clients[i].inuse = 0;
 
     /* determine the listener address and port */
     bzero(&laddr, sizeof(struct sockaddr_in));
